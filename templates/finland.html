@@ -1,0 +1,293 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+
+<div class="container" style="margin-top:20px;">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>RCH 3 Year Comparison</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+          <a href="{% url "fincards1" %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>RCH 3 Year Comparison</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+         </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>RCH Flexible Pool</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+         <a href="{% url "fincards2" %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>RCH Flexible Pool</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Mission Flexible Pool</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="{% url "fincards3" %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Mission Flexible Pool</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Routine Immunization</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="{% url "fincards4" %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Routine Immunization</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Pulse Polio Immunisation</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="{% url "fincards5" %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Pulse Polio Immunisation</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>I.D.D. Control Programme</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="{% url "fincards6" %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>I.D.D. Control Programme</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Infrastructure Maintenance</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="{% url 'fincards7' %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Infrastructure Maintenance</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 8</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="#">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 8</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 9</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="#">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 9</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

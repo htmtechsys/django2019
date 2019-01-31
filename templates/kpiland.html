@@ -1,0 +1,379 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+
+
+<div class="container" style="margin-top:20px;">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Sterilisation</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href={% url "key_ind1" %}>
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Sterilisation</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Maternal Health</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="{% url "mat_ind_2" %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Maternal Health</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Family Health</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="{% url "health_ind_3" %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Family Health</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Child Health</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="{% url 'child_ind_3' %}">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Child Health</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 5</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 5</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 6</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 6</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 7</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 7</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 8</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 8</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 9</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 9</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 10</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 10</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 11</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 11</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 12</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        <a href="">
+          <div class="back">
+            <div class="card1" id="kpicard">
+              <div>
+                 <p class="colorboxesheading">
+                   <span>Indicator 12</span>
+                  </p>
+                 <hr>
+                 <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

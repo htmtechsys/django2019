@@ -1,0 +1,432 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+
+
+
+<nav class="navbar navbar navbar-static-top">
+  <div class="row">
+      <div class="col-md-1" id="emblem" style="padding-top:10px;">
+        <ul class="nav navbar pull-left">
+         <img  src="{% static "image/emblem.jpg" %}" alt="card image" height="90px" >
+        </ul>
+      </div>
+        <div class="col-md-9" align="center">
+            <h1  style="color:blue;padding-top:25px;font-size:38px;"><b>INTEGRATED HEALTHCARE DASHBOARD</b></h1>
+        </div>
+        <div class="col-md-2">
+          <ul class="nav navbar pull-right">
+           <img  src="{% static "image/NHM1.png" %}" alt="card image">
+          </ul>
+        </div>
+  </div>
+</nav>
+<div class="container-fluid">
+     <div class="row" style="margin-top:20px;margin-bottom:20px;">
+       <div class="col-md-2">
+         <img  src="{% static "image/modi1.jpg" %}" class="img-rounded" width="250px">
+       </div>
+       <div class="col-md-4" style="padding-left:86px;">
+         <img  src="{% static "image/chart.gif" %}" class="img-rounded" width="350px">
+       </div>
+       <div class="col-md-6">
+         <div class="col-md-6">
+           <a href="https://www.nhp.gov.in/">
+           <div class="maincard" id="maincard">
+               <div align="center">
+                  <p class="colorboxesheading">
+                    <span>National Health Portal</span>
+                  </p>
+                  <hr>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star-empty" style="font-size:28px;"></span>
+               </div>
+           </div>
+         </a>
+           <br>
+           <a href="https://nrhm-mis.nic.in/SitePages/Home.aspx">
+           <div class="maincard3" id="maincard">
+               <div align="center">
+                  <p class="colorboxesheading">
+                    <span>Health Statistics Information Portal </span>
+                  </p>
+                  <hr>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star-empty" style="font-size:28px;"></span>
+               </div>
+           </div>
+         </a>
+         </div>
+         <div class="col-md-6">
+           <a href="https://cghs.gov.in/">
+           <div class="maincard2" id="maincard">
+               <div align="center">
+                  <p class="colorboxesheading">
+                    <span>Medical Counselling</span>
+                  </p>
+                  <hr>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star-empty" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star-empty" style="font-size:28px;"></span>
+               </div>
+           </div>
+         </a>
+         </br>
+         <a href="https://mcc.nic.in/">
+           <div class="maincard4" id="maincard">
+               <div align="center">
+                  <p class="colorboxesheading">
+                    <span>Central Government Health Scheme</span>
+                  </p>
+                  <hr>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+                  <span class="glyphicon glyphicon-star" style="font-size:28px;"></span>
+               </div>
+           </div>
+         </a>
+         </div>
+       </div>
+    </div>
+
+    <div class="row" style="margin-top:20px;padding-bottom:20px;">
+              <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-md-3">
+                        <img class="img-rounded" src="{% static "finance/finance.png" %}" width="300px" height="300px" style="margin-top:10px"/>
+                    </div>
+                  </div>
+                  <br/>
+                  <div>
+                    <h3 align="center"><b>Related Links</b></h3>
+                    <marquee direction = "up" scrollamount="4" onmouseover="this.stop();" onmouseout="this.start();">
+                      <li><a href="https://www.mohfw.nic.in/poorpatientsfinancialassistan/health-ministers-cancer-patient-fund-csr" style="margin:1px;">Health Minister's Cancer Patient Fund</a></li>
+                      <li><a href="https://mohfw.gov.in/poorpatientsfinancialassistan/health-ministers-discretionary-grant-hmdg">Health Ministers Discretionary Grant</a></li>
+                      <li><a href="https://mohfw.gov.in/poorpatientsfinancialassistan/ran-health-ministers-cancer-patient-fund">RAN (Health Ministers Cancer Patient Fund)</a></li>
+                      <li><a href="https://mohfw.gov.in/poorpatientsfinancialassistan/rashtriya-arogya-nidhi">Rashtriya Arogya Nidhi</a></li>
+                      <li><a href="http://cancerindia.org.in/">National Institute of Cancer Prevention and Research (NICPR)</a></li>
+                      <li><a href="http://healthpolicy.nhp.gov.in/auth/login?path=dashboard">MIS for National Health Policy Framework 2017</a></li>
+                      <li><a href="http://dghs.gov.in/">Directorate General Health of Services</a></li>
+                      <li><a href="https://tbcindia.gov.in/">Tuberculosis Control-India (TBC-India)</a></li>
+                      <li><a href="http://a2hp.mohfw.gov.in/">Allied healthcare Professional Database</a></li>
+                      <li><a href="http://pmssy-mohfw.nic.in/">Pradhan Mantri Swasthya Suraksha Yojana - PMSSY</a></li>
+                    </marquee>
+                  </div>
+              </div>
+              <div class="col-md-9">
+              <div class="row" style="margin-top:10px;">
+                 <div class="col-md-3">
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flipper">
+                        <div class="front">
+                          <div class="card1" id="subcard">
+                            <div>
+                               <p class="colorboxesheading">
+                                 <span>KPIs</span>
+                                </p>
+                               <hr>
+                               <center><img class=" img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="100px" width="100px"></center>
+                            </div>
+                           </div>
+                        </div>
+                        <a href="{% url 'Keycards' %}">
+                        <div class="back">
+                          <div class="flip_card1" id="subcard">
+                            <center><img class="img-fluid" src="{% static "image/kpi.png" %}" alt="card image" height="200px" width="220px"></center>
+                          </div>
+                        </div>
+                      </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                       <div class="flipper">
+                         <div class="front">
+                           <div class="card2" id="subcard">
+                             <div>
+                                <p class="colorboxesheading">
+                                  <span>Financial Overview</span>
+                                </p>
+                                <hr>-->
+                                <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="100px" width="100px"></center>
+                            </div>
+                           </div>
+                         </div>
+                         <a href="{% url 'fincards' %}">
+                         <div class="back">
+                           <div class="" id="subcard">
+                             <center><img class=" img-fluid" src="{% static "image/FINANCIAL OVERVIEW.png" %}" alt="card image" height="200px" width="220px"></center>
+                           </div>
+                         </div>
+                       </a>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="col-md-3">
+                      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                          <div class="front">
+                            <div class="card3" id="subcard">
+                              <div>
+                                 <p class="colorboxesheading">
+                                   <span>Data Analytics</span>
+                                 </p>
+                                 <hr>
+                                 <center><img class=" img-fluid" src="{% static "image/DATA ANALYSIS.png" %}" alt="card image" height="100px" width="100px"></center>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="">
+                          <div class="back">
+                            <div class="" id="subcard">
+                              <center><img class=" img-fluid" src="{% static "image/DATA ANALYSIS.png" %}" alt="card image" height="200px" width="220px"></center>
+                            </div>
+                          </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                         <div class="flipper">
+                           <div class="front">
+                             <div class="card4" id="subcard">
+                               <div>
+                                  <p class="colorboxesheading">
+                                    <span>Search</span>
+                                  </p>
+                                  <hr>
+                                   <center><img class=" img-fluid" src="{% static "image/SEARCH.png" %}" alt="card image" height="100px" width="100px"></center>
+                               </div>
+                             </div>
+                           </div>
+                           <a href="">
+                           <div class="back">
+                             <div class="" id="subcard">
+                               <center><img class=" img-fluid" src="{% static "image/SEARCH.png" %}" alt="card image" height="200px" width="220px"></center>
+                             </div>
+                           </div>
+                           </a>
+                         </div>
+                       </div>
+                     </div>
+                </div>
+
+                    <div class="row" style="margin-top:15px;">
+                      <div class="col-md-3">
+                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                           <div class="flipper">
+                             <div class="front">
+                               <div class="card5" id="subcard">
+                                 <div>
+                                    <p class="colorboxesheading">
+                                      <span>Departments</span>
+                                    </p>
+                                    <hr>
+                                    <center><img class="img-fluid" src="{% static "image/DEPARTMENTS.png" %}" alt="card image" height="100px" width="100px"></center>
+                                 </div>
+                               </div>
+                             </div>
+                             <a href="{% url 'department' %}">
+                             <div class="back">
+                               <div class="" id="subcard">
+                                 <center><img class="img-fluid" src="{% static "image/DEPARTMENTS.png" %}" alt="card image" height="200px" width="220px" id="dep"></center>
+                               </div>
+                             </div>
+                             </a>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="col-md-3">
+                          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper">
+                              <div class="front">
+                                <div class="card6" id="subcard">
+                                  <div>
+                                     <p class="colorboxesheading">
+                                       <span>Health Portals</span>
+                                     </p>
+                                     <hr>
+                                     <center><img class="img-fluid" src="{% static "image/PORTFOLIOS.png" %}" alt="card image" height="100px" width="100px"></center>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="{% url 'health_portal' %}">
+                              <div class="back">
+                                <div class="" id="subcard">
+                                  <center><img class="img-fluid" src="{% static "image/PORTFOLIOS.png" %}" alt="card image" height="200px" width="220px"></center>
+                                </div>
+                              </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                           <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                             <div class="flipper">
+                               <div class="front">
+                                 <div class="card7" id="subcard">
+                                   <div>
+                                      <p class="colorboxesheading">
+                                        <span>Programmes & Schemes</span>
+                                      </p>
+                                      <hr>
+                                      <center><img class="img-fluid" src="{% static "image/PROGRAMS AND SCHEMES.png" %}" alt="card image" height="100px" width="100px"></center>
+                                   </div>
+                                 </div>
+                               </div>
+                               <a href="{% url 'program' %}">
+                               <div class="back">
+                                 <div class="" id="subcard">
+                                   <center><img class="img-fluid" src="{% static "image/PROGRAMS AND SCHEMES.png" %}" alt="card image" height="200px" width="220px"></center>
+                                 </div>
+                               </div>
+                               </a>
+                             </div>
+                           </div>
+                         </div>
+
+                         <div class="col-md-3">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                              <div class="flipper">
+                                <div class="front">
+                                  <div class="card8" id="subcard">
+                                    <div>
+                                       <p class="colorboxesheading">
+                                         <span>District/Zonal Report</span>
+                                       </p>
+                                       <hr>
+                                       <center><img class="img-fluid" src="{% static "image/DISTRICT AND ZONAL REPORTS.png" %}" alt="card image" height="100px" width="100px"></center>
+                                    </div>
+                                  </div>
+                                </div>
+                                <a href="{% url 'district' %}">
+                                <div class="back">
+                                  <div class="" id="subcard">
+                                    <center><img class="img-fluid" src="{% static "image/DISTRICT AND ZONAL REPORTS.png" %}" alt="card image" height="200px" width="220px"></center>
+                                  </div>
+                                </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      <div class="row" style="margin-top:15px;">
+                        <div class="col-md-3">
+                           <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                             <div class="flipper">
+                               <div class="front">
+                                 <div class="card9" id="subcard">
+                                   <div>
+                                      <p class="colorboxesheading">
+                                        <span>Portfolio Awards</span>
+                                      </p>
+                                      <hr>
+                                      <center><img class="img-fluid" src="{% static "image/PORTFOLIOS AND BEST PERFORMANCE AWARDS.png" %}" alt="card image" height="100px" width="100px"></center>
+                                   </div>
+                                 </div>
+                               </div>
+                               <a href="{% url 'district' %}">
+                               <div class="back">
+                                 <div class="" id="subcard">
+                                   <center><img class="img-fluid" src="{% static "image/PORTFOLIOS AND BEST PERFORMANCE AWARDS.png" %}" alt="card image" height="200px" width="220px"></center>
+                                 </div>
+                               </div>
+                               </a>
+                             </div>
+                           </div>
+                         </div>
+
+                         <div class="col-md-3">
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                              <div class="flipper">
+                                <div class="front">
+                                  <div class="card10" id="subcard">
+                                    <div>
+                                       <p class="colorboxesheading">
+                                         <span>Help/Contact</span>
+                                       </p>
+                                       <hr>
+                                       <center><img class="img-fluid" src="{% static "image/CONTACT US.png" %}" alt="card image" height="100px" width="100px"></center>
+                                    </div>
+                                  </div>
+                                </div>
+                                <a href="{% url 'help' %}">
+                                <div class="back">
+                                  <div class="" id="subcard">
+                                    <center><img class="img-fluid" src="{% static "image/CONTACT US.png" %}" alt="card image" height="200px" width="220px"></center>
+                                  </div>
+                                </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3">
+                             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                               <div class="flipper">
+                                 <div class="front">
+                                   <div class="card10" id="subcard">
+                                     <div>
+                                        <p class="colorboxesheading">
+                                          <span>Calendar/Events</span>
+                                        </p>
+                                        <hr>
+                                        <center><img class="img-fluid" src="{% static "image/EVENT CALENDAR.png" %}" alt="card image" height="100px" width="100px"></center>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <a href="{% url 'calendar' %}">
+                                 <div class="back">
+                                   <div class="" id="subcard">
+                                     <center><img class="img-fluid" src="{% static "image/EVENT CALENDAR.png" %}" alt="card image" height="200px" width="220px"></center>
+                                   </div>
+                                 </div>
+                                 </a>
+                               </div>
+                             </div>
+                           </div>
+                           <div class="col-md-3">
+                              <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                  <div class="front">
+                                    <div class="card10_1" id="subcard">
+                                      <div>
+                                         <p class="colorboxesheading">
+                                           <span>Chat</span>
+                                         </p>
+                                         <hr>
+                                         <center><img class="img-fluid" src="{% static "image/CHAT.png" %}" alt="card image" height="100px" width="100px"></center>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="{% url 'chat' %}">
+                                  <div class="back">
+                                    <div class="" id="subcard">
+                                      <center><img class="img-fluid" src="{% static "image/CHAT.png" %}" alt="card image" height="200px" width="220px" id="dep"></center>
+                                    </div>
+                                  </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                 </div>
+             </div>
+         </div>
+
+
+  {% endblock %}

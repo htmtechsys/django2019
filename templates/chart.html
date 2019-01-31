@@ -1,0 +1,82 @@
+<html >
+
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content="width-device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>My chart.js chart</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+</head>
+
+<body onload="checkCookies()">
+<p id="name"></p>
+<script>
+
+function checkCookies() {
+    document.getElementById("name").innerHTML="hello";
+    $.ajax({
+    url:'../static/rch_flexiable.csv',
+    success: function (response){
+      readCSVFile(response);
+    }
+  });
+  function readCSVFile(response) {
+    var lines = response.split("r/\n");
+
+    for (var i = 1; i < lines.length; i++) {
+       var firstColumn = lines[i].split(";")[0];     //First column (Split on the separator!)
+       alert(firstColumn[1]);
+
+    }
+};
+}
+</script>
+<!--<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+type: 'bar',
+data: {
+labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+datasets: [{
+label: '# of Votes',
+data: [12, 19, 10, 15, 8, 11],
+
+backgroundColor: [
+'rgba(255, 99, 132, 0.2)',
+'rgba(54, 162, 235, 0.2)',
+'rgba(255, 206, 86, 0.2)',
+'rgba(75, 192, 192, 0.2)',
+'rgba(153, 102, 255, 0.2)',
+'rgba(255, 159, 64, 0.2)'
+],
+borderColor: [
+'rgba(255,99,132,1)',
+'rgba(54, 162, 235, 1)',
+'rgba(255, 206, 86, 1)',
+'rgba(75, 192, 192, 1)',
+'rgba(153, 102, 255, 1)',
+'rgba(255, 159, 64, 1)'
+],
+borderWidth: 3,
+}]
+},
+options: {
+responsive:true,
+maintainAspectRatio:false,
+scales: {
+yAxes: [{
+ticks: {
+beginAtZero:true
+}
+}]
+}
+}
+});
+</script>-->
+
+</body>
+</html>

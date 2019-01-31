@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+ {% block body_block %}
+ <style>
+ #mybtn
+ {
+   margin-top:15px;
+ }
+ </style>
+<div class="container-fluid" style="margin-top:30px;">
+  <div class="row">
+    <div class="col-md-10">
+
+    </div>
+    <div class="col-md-2">
+      <button onclick="window.location='{% url 'add' %}'" type="button" class="btn btn-primary" id="mybtn">ADD ENTRY</button>
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-md-3">
+      {% for entry in entries %}
+      {% include 'calendar_entry.html' %}
+      {% endfor %}
+    </div>
+    <div class="col-md-9">
+      {% include 'calendar.html' %}
+    </div>
+
+  </div>
+</div>
+
+
+
+{% endblock %}
